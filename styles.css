@@ -1,0 +1,24 @@
+/* Container untuk penempatan relatif */
+.canvas-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+/* Canvas akan tetap berada di tempatnya */
+#canvas {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Gambar overlay akan ditumpuk di atas canvas dengan transparansi */
+.overlay-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10; /* Memastikan gambar berada di atas canvas */
+    opacity: 0.8; /* Nilai transparansi, sesuaikan sesuai kebutuhan (0.0-1.0) */
+}
