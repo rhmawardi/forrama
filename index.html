@@ -7,13 +7,37 @@
     <title>Happy Birthday Rama</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" type="image/x-icon" href="./srcImages/favicon-16x16.png">
+    <style>
+        /* Tambahan CSS untuk membuat gambar responsif */
+        .overlay-image {
+            max-width: 100%;
+            height: auto;
+            width: 700px; /* Ukuran default untuk desktop */
+        }
+        
+        /* Media query untuk layar mobile */
+        @media screen and (max-width: 768px) {
+            .overlay-image {
+                width: 90%; /* Menggunakan persentase untuk layar kecil */
+                margin: 0 auto;
+            }
+            
+            .heading span {
+                font-size: 16px; /* Menyesuaikan ukuran teks pada mobile */
+                margin-top: 10px;
+                display: block;
+            }
+        }
+    </style>
 </head>
 <body>
     <canvas id="canvas"></canvas>
 	
-    <h1 class="heading"><img src="./happy.png" alt="Happy Birthday Image" class="overlay-image" width="700" height="auto"><span>Just like the market, life has its ups and downs — but may this year bring you bullish happiness all the way!🎉🥂</span></h1>
+    <h1 class="heading">
+        <img src="./happy.png" alt="Happy Birthday Image" class="overlay-image">
+        <span>Just like the market, life has its ups and downs — but may this year bring you bullish happiness all the way!🎉🥂</span>
+    </h1>
 
- 
     <!-- Audio Element -->
     <audio id="birthdayAudio" src="hbd.mp3" loop></audio>
     
